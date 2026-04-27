@@ -1,4 +1,4 @@
-package com.example.myownbank.activities;
+package com.vtr96.myownbank.activities;
 
 import android.os.Bundle;
 import android.widget.Button;
@@ -6,7 +6,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.myownbank.R;
+import com.vtr96.myownbank.R;
+import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,11 +21,8 @@ public class MainActivity extends AppCompatActivity {
         loginButton = findViewById(R.id.loginButton);
 
         loginButton.setOnClickListener(view -> {
-            Toast.makeText(
-                    MainActivity.this,
-                    "Login simulado com sucesso!",
-                    Toast.LENGTH_SHORT
-            ).show();
+            Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+            startActivity(intent);
         });
     }
 }
