@@ -19,6 +19,8 @@
 
         </activity>
         <activity android:name=".activities.HomeActivity" />
+        <activity android:name=".activities.TransactionsActivity" />
+        <activity android:name=".activities.AddTransactionActivity" />
 
     </application>
 
